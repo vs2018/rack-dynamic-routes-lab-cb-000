@@ -8,8 +8,10 @@ class Application
       item = req.path.split("/items/").last 
       if item
         resp.write item.price
+      else
+        
       end
-      elsif
+      
       
       else
       resp.write "Route not found"
