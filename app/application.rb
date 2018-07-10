@@ -7,7 +7,7 @@ class Application
       if req.path.match(/items/)
       item = req.path.split("/items/").last 
       result = @@items.find{|s| s.name == item}
-          if item != nil
+          if result != nil
             resp.write result.price
           else
            resp.write "Item not found"
